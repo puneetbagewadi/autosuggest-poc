@@ -34,7 +34,7 @@ class Autocomplete extends Component {
     if (!this.debouncedFn) {
       this.debouncedFn = _.debounce(() => {
         this.getSuggestionsWithAsync(userInput);
-      }, 2000);
+      }, 1000);
     }
     this.debouncedFn();
   };
